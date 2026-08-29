@@ -1,3 +1,45 @@
 body {
-    background-color: rgb(65, 121, 65)
+    background-color: rgb(129, 216, 129)
+}
+
+/* Basic styling for text and image */
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #dfbcbc;
+}
+
+h1 {
+    color: #8b0000;
+    font-size: 32px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.185);
+    height: 100vh;
+}
+
+h2 {
+    color: #8b0000;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+strong {
+    color: #111111;
 }

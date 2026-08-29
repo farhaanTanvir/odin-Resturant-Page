@@ -1,24 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav>
-        <button id="home">Home</button>
-        <button id="menu">Menu</button>
-        <button id="about">About</button>
-        </nav>
-    </header>
+import ImageUrl from './homepage.jfif';
 
-    <div id="content">
-       <!--  <main>
+export function showHomepage() {
+    const main = document.querySelector('#content');
+
+    const homepageCode = `<main>
   <h1>Welcome to The Golden Fork</h1>
 
-  <img src="./images (12).jfif" alt="Delicious restaurant food dish">
+  <img src="${ImageUrl}" alt="Delicious restaurant food dish">
 
 
   <p>
@@ -34,7 +22,7 @@
     every dish is prepared with love and care. Come join us and discover 
     why our guests call us the heart of the neighborhood.
   </p>
-</main> -->
-    </div>
-</body>
-</html>
+</main>`
+    main.innerHTML = ''
+    main.insertAdjacentHTML('beforeend', homepageCode)
+}
